@@ -8,17 +8,6 @@
     android:background="#286C29"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="401dp"
-        android:layout_height="97dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -35,64 +24,31 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="99dp"
-        android:layout_marginBottom="454dp"
-        android:text="Nunca has probado Mate ?"
+        android:layout_height="40dp"
+        android:text="Nunca has probado Mate ? te mostraremos todo lo que necesitas saber sobre el mate"
         android:textColor="#E6E6E6"
         android:textColorLink="#ECECEC"
         android:textScaleX="1"
         android:textSize="16sp"
         android:textStyle="bold"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="175dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cardView"
-        android:layout_width="409dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="233dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="298dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="405dp"
-            android:layout_height="191dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="5dp"
-            android:contentDescription="TODO"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/imagesmate"
-            tools:layout_editor_absoluteX="4dp" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginBottom="519dp"
-        android:text="¡Descubre la fascinante cultura del mate latinoamericano y aprende a prepararlo tú mismo!"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#F6F3F3"
-        android:textColorLink="#EDE9E9"
-        android:textSize="19sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/imagesmate"
 
 </androidx.constraintlayout.widget.ConstraintLayout>
