@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "577746247724",
+    "project_id": "mimate-966b6",
+    "storage_bucket": "mimate-966b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577746247724:android:8a4bfe50c5ed2870277189",
+        "android_client_info": {
+          "package_name": "com.example.mimate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEJgl9XGtH72_Hqq-gTFmPF7bdxFjbNF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
