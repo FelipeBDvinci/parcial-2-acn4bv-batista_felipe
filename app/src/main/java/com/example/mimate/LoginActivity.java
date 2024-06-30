@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -21,13 +22,16 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
+
     TextView textView;
     ProgressBar progressBar;
 
 
+    public LoginActivity(FirebaseAuth mAuth) {
+        this.mAuth = mAuth;
+    }
 
-
-    public void login(String email, String password) {
+    protected void login(String email, String password) {
 
         Log.i("firebase", "email:" + email);
         Log.i("firebase", "password: " + password);
@@ -35,11 +39,12 @@ public class LoginActivity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
+
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
                             progressBar.setVisibility(View.GONE);
-                            Intent intent = new Intent(getApplicationContext(), MainActivity.class );
+                            Intent intent = new Intent(LoginActivity.this, MainActivity.class );
                             startActivity (intent);
 
                         } else {
@@ -74,13 +79,13 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         mAuth = FirebaseAuth.getInstance();
-        textView = findViewById(R.id.contrasena);
-        progressBar = this.<ProgressBar>findViewById(R.id.main);
 
-        textView.setOnClickListener(new View.OnClickListener() {
+        Button btn_ingresar = findViewById(R.id.btn_ingresar);
+        btn_ingresar.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity (intent);
                 finish ();
 
