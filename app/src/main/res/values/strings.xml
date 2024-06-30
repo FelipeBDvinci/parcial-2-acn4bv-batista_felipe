@@ -1,14 +1,10 @@
 <resources>
     <string name="app_name">MiMate</string>
     <string name="app_presentation">Sea bienvenido a MiMate, acá descubrirás todo lo que necesitas para tener un buen mate preparado. </string>
-    <string name="descubra_ya">DESCUBRA YA !</string>
+    <string name="descubra_ya">DESCUBRA</string>
     <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="presentation1">Bienvenido a la App de MiMate</string>
+    <string name="app_ingresar">ingresar</string>
+    <string name="app_contraseña">contraseña</string>
+    <string name="app_correo">correo</string>
 </resources>

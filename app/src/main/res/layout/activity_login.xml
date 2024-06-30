@@ -10,10 +10,11 @@
     tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="390dp"
-        android:layout_height="230dp"
+        android:id="@+id/CardView"
+        android:layout_width="350dp"
+        android:layout_height="240dp"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="165dp"
         android:layout_marginEnd="16dp"
         app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,11 +22,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
             android:background="#7D973F"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="15dp"
+            tools:ignore="ExtraText">
 
             <TextView
                 android:id="@+id/MiMatePres"
@@ -33,7 +35,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="18dp"
                 android:layout_marginEnd="18dp"
-                android:text="Bienvenido a la App de MiMate" />
+                android:text="@string/presentation1"
+                android:textColor="#49454f" />
 
             <EditText
                 android:id="@+id/correo"
@@ -42,28 +45,28 @@
                 android:layout_marginTop="18dp"
                 android:ems="15"
                 android:inputType="text"
-                android:text="Correo"
-                text
-                />
+                android:text="@string/app_correo"
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/contrasena"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
-                android:ems="10"
-                android:hint="Contraseña"
-                android:inputType="textPassword" />
+
+                android:hint="@string/app_contraseña"
+                android:inputType="textPassword"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/btn_ingresar"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="18dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="18dp"
                 android:backgroundTint="#10530B"
-                android:text="ingresar"
+                android:text="@string/app_ingresar"
                 app:strokeColor="#3E1010" />
 
         </LinearLayout>
