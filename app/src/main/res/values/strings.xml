@@ -1,11 +1,29 @@
 <resources>
+
+    // LOGIN ACTIVITY //
+    <string name="app_ingresar">ingresar</string>
+    <string name="app_contraseña">contraseña</string>
+    <string name="app_correo">correo</string>
+
+    //MAIN ACTIVITY //
+
     <string name="app_name">MiMate</string>
     <string name="app_presentation">Sea bienvenido a MiMate, acá descubrirás todo lo que necesitas para tener un buen mate preparado. </string>
     <string name="descubra_ya">DESCUBRA</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="presentation1">Bienvenido a la App de MiMate</string>
-    <string name="app_ingresar">ingresar</string>
-    <string name="app_contraseña">contraseña</string>
-    <string name="app_correo">correo</string>
+
     <string name="PasarActivity01">descubra ya</string>
+
+
+    // CATEGORIA_MATE ACTIVITY //
+
+
+    // YerbaMateSinPalo ACTIVITY //
+
+    // YerbaMateConPalo ACTIVITY //
+
+    // YerbaMateSaborizada ACTIVITY //
+
+
 </resources>
