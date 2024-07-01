@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
-
+    Button btn_ingressar;
     TextView textView;
     ProgressBar progressBar;
 

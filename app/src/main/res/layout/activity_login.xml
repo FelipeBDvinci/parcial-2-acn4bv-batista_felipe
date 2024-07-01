@@ -5,17 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#135914"
     tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="18dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="165dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="48dp"
         android:layout_marginBottom="110dp"
-        app:cardBackgroundColor="#8C8875"
+        app:cardBackgroundColor="#AE9628"
         app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +37,7 @@
 
             <EditText
                 android:id="@+id/contrasena"
-                android:layout_width="330sp"
+                android:layout_width="match_parent"
                 android:layout_height="48sp"
                 android:layout_marginStart="18dp"
                 android:layout_marginTop="265dp"
@@ -54,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:layout_marginEnd="18dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginTop="35dp"
             android:textSize="20sp"
             android:text="@string/presentation1"
@@ -62,7 +63,7 @@
 
         <EditText
             android:id="@+id/correo"
-            android:layout_width="330sp"
+            android:layout_width="match_parent"
             android:layout_height="48sp"
             android:layout_marginStart="18dp"
             android:layout_marginTop="180dp"
@@ -72,7 +73,7 @@
             android:hint="@string/app_correo"
             android:text="@string/app_correo"
             android:textColor="@color/white"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:visibility="visible"
             tools:visibility="visible" />
 
